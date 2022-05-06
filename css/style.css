@@ -1,0 +1,104 @@
+body {
+    font-family: 'Gluten', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img {
+    width: 50%;
+    height: auto;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.contacto li {
+    list-style-type: none;
+}
+.contacto li img {
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+.titulo {
+    font-size: 35px;
+}
+.tabla {
+     width: 80%;
+     margin: 0 auto;
+}
+.datos {
+    display: flex;
+    justify-content: space-between;
+}
+.datos li {
+    padding-right: 20px;
+}
+table, td {
+    border: 1px dotted green;
+    width: 100%;
+    height: auto;
+}
+.cantidad {
+    text-align: right;
+}
+.terminos {
+    width: 70%;
+    margin: 20px auto;
+}
+.objetivos {
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+    .datos {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+a img{
+    width: 50px;
+    float: right;
+}
